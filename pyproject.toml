@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chartread"
+version = "0.1.0"
+description = "统计图读图练习工具：生成柱状图、折线图、扇形图 SVG 并自动出读图题"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["统计图", "读图", "练习", "chart", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+chartread = "chartread.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/chartread"
+Source = "https://github.com/eastyou/chartread"
+
+[tool.setuptools]
+packages = ["chartread"]
